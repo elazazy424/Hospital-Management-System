@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="~/MyOwnContent/AllMin.css" />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="~/MyOwnContent/Hospital.css" />
+    <!-- main template css file -->
+    <link rel="stylesheet" href="~/MyOwnContent/Login.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&family=Jomhuria&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+</head>
+<body>
+    <div class="login-box">
+        <h2>login</h2>
+        <form>
+            <div class="user-box">
+                <label>Username</label>
+                <input type="text" name="" required="" />
+
+            </div>
+            <div class="user-box">
+                <label>Password</label>
+                <input type="password" name="" required="" />
+
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                @Html.ActionLink("Show Doctors","show","Hospital")
+            </a>
+        </form>
+    </div>
+</body>
+</html>
+

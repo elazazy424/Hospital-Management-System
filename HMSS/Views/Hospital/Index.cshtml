@@ -1,0 +1,485 @@
+﻿@{
+    ViewBag.Title = "Hospital Managment System";
+}
+<!-- render all elements normally -->
+<link rel="stylesheet" href="~/MyOwnContent/AllMin.css" />
+<!-- font awesome library -->
+<link rel="stylesheet" href="~/MyOwnContent/Hospital.css" />
+<!-- main template css file -->
+<link rel="stylesheet" href="~/MyOwnContent/Site.css" />
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&family=Jomhuria&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+<!-- start header -->
+<header>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="~/MyOwnContent/images/11.png" alt="logo" />
+        </a>
+        <nav>
+            <i class="fas fa-bars toggle-menu"></i>
+            <ul>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Pricing">Pricing</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>@Html.ActionLink("Login", "Login", "Hospital")</li>
+                <li>@Html.ActionLink("Sign Up", "Create", "Hospital")</li>
+
+
+            </ul>
+            <div class="form">
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- end header -->
+<!-- Start Landing -->
+<div class="landing">
+    <div class="overlay"></div>
+    <div class="text">
+        <div class="content">
+            <h2>
+                Welcome!<br />
+                To Napoleon International Hospital
+            </h2>
+            <p>
+                Napoleon International Hospital is a joint-stock Hospital formed by Napoleon And Zoka it includes over a hunderd Doctors & nurses
+            </p>
+        </div>
+    </div>
+    <i class="fas fa-angle-left change-background fa-2x"></i>
+    <i class="fas fa-angle-right change-background fa-2x"></i>
+    <ul class="bullets">
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+    </ul>
+</div>
+<!-- End Landing -->
+<!-- start services -->
+<div class="services" id="Services">
+    <div class="container">
+        <div class="main-heading">
+            <h2>services</h2>
+            <p>
+                Emergency unit
+            </p>
+        </div>
+        <div class="services-container">
+            <div class="srv-box">
+                <i class="fa-solid fa-hospital"></i>
+                <div class="text">
+                    <h3>Intensive care units</h3>
+                    <p>
+                        Provide treatment and monitoring for people who are very ill or unstable they are staffed with specially trained healthcare proffesinals
+                        and contain sophisticated monitoring equipment
+                    </p>
+                </div>
+            </div>
+            <div class="srv-box">
+                <i class="fas fa-cog fa-3x"></i>
+                <div class="text">
+                    <h3>Neurology</h3>
+                    <p>
+                        Medicine dealing with the diagnosis and treatment of all categories of conditions and disease involving the brain, the spinal cord and the peripheral nerves.
+                    </p>
+                </div>
+            </div>
+            <div class="srv-box">
+                <i class="fa-solid fa-user-nurse"></i>
+                <div class="text">
+                    <h3>Internal medicine</h3>
+                    <p>
+                        medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases. Doctors specializing in internal medicine are called internists, or physicians (without a modifier) in Commonwealth nations. Internists are medical specialists that are skilled in the management of patients who have undifferentiated or multi-system disease processes. Internists care for hospitalized (inpatient)
+                    </p>
+                </div>
+            </div>
+            <div class="srv-box">
+                <i class="fa-solid fa-user-doctor"></i>
+                <div class="text">
+                    <h3>
+                        Surgery
+                    </h3>
+                    <p>
+                        medical specialty that uses manual and/or instrumental techniques to physically reach into a subject's body in order to investigate or treat pathological conditions such as a disease or injury
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end services -->
+<!-- start design -->
+<div class="design">
+    <div class="image">
+        <img src="~/MyOwnContent/images/Dr2.jpg" alt="design" />
+    </div>
+    <div class="text">
+        <h2>OUR DOCTORS ARE...</h2>
+        <ul>
+            <li>quite </li>
+            <li>inquisitive </li>
+            <li>curious </li>
+            <li>carring</li>
+        </ul>
+    </div>
+</div>
+<!-- end design -->
+<!-- start portfolio -->
+<div class="portfolio" id="Portfolio">
+    <div class="container">
+        <div class="main-heading">
+            <h2>Portfolio</h2>
+            <p>
+                OUR PORTFOLIO
+            </p>
+        </div>
+        <ul class="shuffle">
+            <li class="active">All</li>
+            <li>App</li>
+            <li>Photo</li>
+            <li>Web</li>
+            <li>Print</li>
+        </ul>
+    </div>
+    <div class="imgs-container">
+        <div class="box">
+            <img src="~/MyOwnContent/images/Internal-medicine.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/Surgery.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/Cardiology.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/Physiotherapy.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/Radiology.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/Dental-and-Maxillofacial-Surgery.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/Nutrition.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="~/MyOwnContent/images/E.N.T.jpg" alt="" />
+            <div class="caption">
+                <h4>Awesome Napoleon</h4>
+                <p>Photography</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="more">More</a>
+</div>
+<!-- end portfolio -->
+<!-- start video -->
+<div class="video">
+    <video autoplay muted loop>
+        <source src="~/MyOwnContent/videos/awesomee-video.mp4" type="video/mp4" />
+    </video>
+    <div class="text">
+        <h2>SUPER DOCTORS VIDEO HERE</h2>
+        <p>Its All You Need</p>
+        <button>see more</button>
+    </div>
+</div>
+<!-- end video -->
+<!-- start about  -->
+<div class="about" id="About">
+    <div class="container">
+        <div class="main-heading">
+            <h2>ABOUT US</h2>
+            <p style="font-size:15px;">
+
+                The hospital is located in the heart of Cairo and Giza, making it easy to reach was established January  1983.
+
+                The hospital has more than 200 consultants and university professors in more than fifty general medical specialties.
+
+                The  hospital has 3 of  largest  medical buildings was  equipped  with  more than  250 electric beds with  all levels of accommodation in suites, single and double rooms, more than 40 beds, intensive care and isolation, 9 nurseries and 12 emergency beds
+            </p>
+        </div>
+        <img src="~/MyOwnContent/images/about.png" alt="about" />
+    </div>
+</div>
+<!-- end about -->
+<!-- start stat -->
+<div class="stat">
+    <div class="container">
+        <div class="box">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="number">1.236</div>
+            <p>Doctors</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-user-nurse"></i>
+            <div class="number">256</div>
+            <p>Nurses</p>
+        </div>
+        <div class="box">
+            <i class="far fa-envelope"></i>
+            <div class="number">1,743</div>
+            <p>Mail Sent</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-trophy"></i>
+            <div class="number">17</div>
+            <p>Awards Received</p>
+        </div>
+    </div>
+</div>
+<!-- end stat -->
+<!--start skills  -->
+<div class="our-skills">
+    <div class="container">
+        <div class="testimonials">
+            <h3>Doctors</h3>
+            <p>
+                We have the best doctors in world
+            </p>
+            <div class="content">
+                <img src="~/MyOwnContent/images/skills-01.jpg" alt="" />
+                <div class="text">
+                    Our doctors are awesome and helpfull
+                    <p>John Doe, CEO</p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="~/MyOwnContent/images/skills-02.jpg" alt="" />
+                <div class="text">
+                    Our doctors are carring people
+                    <p>John Doe, CEO</p>
+                </div>
+            </div>
+            <ul class="bullets">
+                <li></li>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h3>Nurses</h3>
+            <p>
+                We Have The Best Nurses
+            </p>
+            <div class="prog-holder">
+                <h4>social individuals</h4>
+                <div class="prog">
+                    <span style="width: 90%" data-progress="90"></span>
+                </div>
+            </div>
+            <div class="prog-holder">
+                <h4>persuade</h4>
+                <div class="prog">
+                    <span style="width: 85%" data-progress="85"></span>
+                </div>
+            </div>
+            <div class="prog-holder">
+                <h4>help people</h4>
+                <div class="prog">
+                    <span style="width: 80%" data-progress="80"></span>
+                </div>
+            </div>
+            <div class="prog-holder">
+                <h4>investigative</h4>
+                <div class="prog">
+                    <span style="width: 90%" data-progress="90"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /end skills -->
+<!-- start quote -->
+<div class="quote">
+    <div class="container">
+        <q>
+            He who has health has hope; and he who has hope has everything.
+        </q>
+        <p>John Doe</p>
+    </div>
+</div>
+<!-- end quote -->
+<!-- start pricing -->
+<div class="pricing" id="Pricing">
+    <div class="container">
+        <div class="main-heading">
+            <h2>pricing</h2>
+            <p>
+                OUR PRICING
+            </p>
+        </div>
+        <div class="plans">
+            <div class="plan">
+                <div class="head">
+                    <h3>basic</h3>
+                    <span>19</span>
+                </div>
+                <ul>
+                    <li>Feature No 1</li>
+                    <li>Extra Feature</li>
+                    <li>Extra Feature No 2</li>
+                    <li>Feature</li>
+                </ul>
+                <div class="foot">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="head">
+                    <h3>premium</h3>
+                    <span>29</span>
+                </div>
+                <ul>
+                    <li>Feature No 1</li>
+                    <li>Extra Feature</li>
+                    <li>Extra Feature No 2</li>
+                    <li>Feature</li>
+                </ul>
+                <div class="foot">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="head">
+                    <h3>pro</h3>
+                    <span>39</span>
+                </div>
+                <ul>
+                    <li>Feature No 1</li>
+                    <li>Extra Feature</li>
+                    <li>Extra Feature No 2</li>
+                    <li>Feature</li>
+                </ul>
+                <div class="foot">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="head">
+                    <h3>platinum</h3>
+                    <span>49</span>
+                </div>
+                <ul>
+                    <li>Feature No 1</li>
+                    <li>Extra Feature</li>
+                    <li>Extra Feature No 2</li>
+                    <li>Feature</li>
+                </ul>
+                <div class="foot">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <p class="contact-txt" id="Contact">
+            Contact us if you have special request
+        </p>
+        <a href="#" class="contact-link">contact Us</a>
+    </div>
+</div>
+<!-- end pricing -->
+<!-- start subscribe -->
+<div class="subscribe">
+    <div class="container">
+        <form action="">
+            <i class="far fa-envelope fa-lg"></i>
+            <input type="email" name="mail" placeholder="Your Email" />
+            <input type="submit" value="Subscribe" />
+        </form>
+        <p>
+            Subscribe US
+        </p>
+    </div>
+</div>
+<!-- end subscribe -->
+<!-- start contact -->
+<div class="contact">
+    <div class="container">
+        <div class="main-heading">
+            <h2>contact</h2>
+            <p>
+                YOU CAN CONTACT US
+            </p>
+        </div>
+        <div class="content">
+            <form action="">
+                <input class="main-input"
+                       type="text"
+                       name="name"
+                       placeholder="Your Name" />
+                <input class="main-input"
+                       type="email"
+                       name="email"
+                       placeholder="Your Email" />
+                <textarea class="main-input"
+                          placeholder="Your Message"
+                          name="Your message"></textarea>
+                <input type="submit" value="send message" />
+            </form>
+            <div class="info">
+                <h4>get in touch</h4>
+                <span class="phone">01068150493</span>
+                <span class="phone">+00 123.456.789</span>
+                <h4>where we are</h4>
+                <address>
+                    Awesome Address 17 <br />
+                    New York, NYC <br />
+                    123-4567-890 <br />
+                    USA
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end contact -->
+<!-- start footer -->
+<footer>
+    <div class="container">
+        <img src="~/MyOwnContent/images/Dr.jpg" alt="logo" />
+        <p>we are social</p>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-home"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p class="foot">&copy; <span>Napoleon</span> All Right Reserved</p>
+    </div>
+</footer>
+<!-- end footer -->
